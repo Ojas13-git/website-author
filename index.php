@@ -1,6 +1,8 @@
 <?php
 // ECHO "ojas";
 //get data from form  
+if(isset($_POST['submit'])){
+    
 $name = $_POST['name'];
 $email= $_POST['email'];
 $message= $_POST['message'];
@@ -14,5 +16,5 @@ if($email!=NULL){
     header("Location:thankyou.html");
 }
 // redirect
-
+}
 ?>
